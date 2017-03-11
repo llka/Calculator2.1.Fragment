@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_atop">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:weightSum="1"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:textSize="40dp"
+            android:id="@+id/tvResult"
+            android:gravity="center_horizontal"
+            android:textColor="#121f77"
+            android:layout_weight="16.48"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+        <fragment
+            android:id="@+id/fragment_hard"
+            android:name="ru.ilka.calculator21fragment.Fragment_Hard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_hard">
+        </fragment>
+        <fragment
+            android:id="@+id/fragment_simple"
+            android:name="ru.ilka.calculator21fragment.Fragment_Simple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/frament_simple">
+        </fragment>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
